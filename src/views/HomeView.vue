@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import CalculatorForm from '../components/CalculatorForm.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <CalculatorForm />
   </main>
 </template>

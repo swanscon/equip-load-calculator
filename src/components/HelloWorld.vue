@@ -1,43 +1,41 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
-</script>
-
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-    </h3>
-  </div>
+  	<div class="content">
+			<img class="logo" src="/er-logo.png">
+			<h1>E<h1 class="smaller">LDEN RIN</h1>G</h1>
+			<h3>Equip Load Calculator</h3>
+		</div>
 </template>
 
-<style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  top: -10px;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
+<style>
+.logo {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   }
+h1 {
+	color: rgb(240, 224, 145);
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	font-size: 3rem;
+	text-shadow: 0px 0px 20px rgba(0,0,0,1);
+}
+.smaller {
+	font-size: 2.3rem;
+}
+h3 {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	text-shadow: 0px 0px 8px rgba(0,0,0,.8);
+}
+.content {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	font-size: 1.1rem;
 }
 </style>
