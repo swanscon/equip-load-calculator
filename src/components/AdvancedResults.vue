@@ -1,10 +1,10 @@
 <script setup>
-  import { RouterLink, RouterView } from 'vue-router'
+  import { RouterView } from 'vue-router'
 </script>
 
 <template>
   <div class="wrapper">
-    <h1>AdvancedForm.vue</h1>
+    <h1>AdvancedResults.vue</h1>
     <RouterLink to="/advanced/results">Advanced Results</RouterLink>
   </div>
     <RouterView/>

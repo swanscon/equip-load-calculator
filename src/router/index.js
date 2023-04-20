@@ -12,11 +12,18 @@ const router = createRouter({
     {
       path: '/advanced',
       name: 'advanced',
-      // route level code-splitting
-      // this generates a separate chunk (Advanced.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/AdvancedView.vue')
-    }
+    },
+    {
+      path: '/results',
+      name: 'results',
+      component: () => import('../views/ResultsView.vue')
+    },
+    {
+      path: '/advanced/results',
+      name: 'advancedresults',
+      component: () => import('../views/AdvancedResultsView.vue')
+    },
   ]
 })
 
