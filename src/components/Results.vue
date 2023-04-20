@@ -5,7 +5,7 @@
 <template>
   <div class="wrapper">
     <h1>Results.vue</h1>
-    <RouterLink to="/results">Results</RouterLink>
+    <RouterLink to="/"><button>RESET &#8634;</button></RouterLink>
   </div>
     <RouterView/>
 </template>
