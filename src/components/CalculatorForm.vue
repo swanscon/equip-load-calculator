@@ -4,7 +4,12 @@
 
 <template>
   <div class="wrapper">
-    <h1>CalculatorForm.vue</h1>
+    <form>
+				<input placeholder="MAX EQUIP LOAD" input type="text" id="max" name="max" required>
+				<br/>
+				<input placeholder="CURRENT LOAD (optional)" input type="text" id="current" name="current">
+				<br/>
+		</form>
     <RouterLink to="/advanced"><button>Advanced</button></RouterLink>
     <RouterLink to="/results"><button>Calculate</button></RouterLink>
   </div>
@@ -19,4 +24,6 @@
 	justify-content: center;
 	font-size: 1.1rem;
 }
+
+
 </style>
