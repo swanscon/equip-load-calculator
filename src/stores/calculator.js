@@ -12,7 +12,7 @@ export const useCalcStore = defineStore('calculator', {
 			checkedItems: [],
         }
     },
-    methods: {
+    actions: {
 		onMax(e) {
 			this.maxLoad = e.maxLoad.value,
 			this.curLoad = e.curLoad.value
