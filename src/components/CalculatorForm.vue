@@ -1,13 +1,15 @@
 <script setup>
-  import { RouterLink, RouterView } from 'vue-router'
+  import { RouterLink, RouterView } from 'vue-router';
+  import { useCalcStore } from '../stores/calculator';
+  const calc = useCalcStore();
 </script>
 
 <template>
   <div class="wrapper">
     <form>
-				<input placeholder="MAX EQUIP LOAD" input type="text" id="max" name="max" required>
+				<input v-model="calc.maxLoad" placeholder="MAX EQUIP LOAD" input type="text" id="max" name="max" required>
 				<br/>
-				<input placeholder="CURRENT LOAD (optional)" input type="text" id="current" name="current">
+				<input v-model="calc.curLoad" placeholder="CURRENT LOAD (optional)" input type="text" id="current" name="current">
 				<br/>
 		</form>
     <RouterLink to="/advanced"><button>Advanced</button></RouterLink>

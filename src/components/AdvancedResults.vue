@@ -1,5 +1,7 @@
 <script setup>
-  import { RouterView } from 'vue-router'
+  import { RouterView } from 'vue-router';
+  import { useCalcStore } from '../stores/calculator';
+  const calc = useCalcStore();
 </script>
 
 <template>

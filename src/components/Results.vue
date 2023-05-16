@@ -1,10 +1,12 @@
 <script setup>
-  import { RouterView } from 'vue-router'
+  import { RouterView } from 'vue-router';
+  import { useCalcStore } from '../stores/calculator';
+  const calc = useCalcStore();
 </script>
 
 <template>
   <div class="wrapper">
-    <h1>Results.vue</h1>
+    <h1>{{ calc.maxLoad }}</h1>
     <RouterLink to="/"><button>RESET &#8634;</button></RouterLink>
   </div>
     <RouterView/>
