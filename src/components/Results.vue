@@ -4,7 +4,11 @@
   import { useCalcStore } from '../stores/calculator';
   const calc = useCalcStore();
   const { maxLoad, curLoad, status } = storeToRefs(calc);
-  const { reset } = mapActions(useCalcStore, ['reset'])
+  // const { reset } = mapActions(useCalcStore, ['reset']);
+  const reset = useCalcStore().reset;
+  const round = useCalcStore().round;
+  const medium = useCalcStore().medium;
+  const heavy = useCalcStore().heavy;
 </script>
 
 <template>
@@ -28,6 +32,17 @@
       <h4 v-else-if="curLoad>=(maxLoad*.9999)">
         {{ status }} OVERLOADED.
       </h4>
+      <div class="status">
+				<p>
+					LIGHT up to {{ round }}
+				</p>
+				<p>
+					MEDIUM from {{ round }} to {{ medium }}
+				</p>
+				<p>
+					HEAVY from {{ medium }} to {{ heavy }}
+				</p>
+			</div>
     <RouterLink to="/"><button @click="reset">RESET &#8634;</button></RouterLink>
   </div>
     <RouterView/>
