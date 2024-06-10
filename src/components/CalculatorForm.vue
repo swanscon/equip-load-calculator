@@ -12,7 +12,6 @@
 				<input v-model="calc.curLoad" placeholder="CURRENT LOAD (optional)" input type="text" id="current" name="current">
 				<br/>
 		</form>
-    <RouterLink to="/advanced"><button>Advanced</button></RouterLink>
     <RouterLink to="/results"><button>Calculate</button></RouterLink>
   </div>
     <RouterView/>
